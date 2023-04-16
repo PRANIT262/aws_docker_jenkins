@@ -20,7 +20,7 @@ pipeline{
 
 		stage(DockerBuild){
 			steps{
-				sh 'docker build -t pranit262/AWS-Jenkins-Docker-Service:latest .'
+				sh 'docker build -t pranit262/aws-d-j:latest .'
 				}
 			}
 		}
