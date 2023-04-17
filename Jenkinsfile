@@ -24,6 +24,39 @@ pipeline{
 				}
 			}
 		}
+		
+		stage('Login') {
+
+steps {
+
+sh 'echo pranit262 | docker login -u Pr@nit1905 --password-stdin'
+
+}
+
+}
+
+stage('Push') {
+
+steps {
+
+sh 'docker push pranit262/aws-d-j:latest'
+
+}
+
+}
+
+}
+
+
+post {
+
+always {
+
+sh 'docker logout'
+
+}
+
+}
 
 
 
