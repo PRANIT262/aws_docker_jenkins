@@ -1,6 +1,6 @@
 FROM openjdk:17
 
 EXPOSE 9006
-ADD /target/AWS.jar AWS.jar
+ADD /target/Aws.jar Aws.jar
 
-ENTRYPOINT [ "java","-jar","/AWS.jar" ]
+ENTRYPOINT [ "java","-jar","/Aws.jar" ]
