@@ -1,5 +1,6 @@
 FROM openjdk:17
 
-COPY /target/AWS.jar /aws_d_j.jar
+EXPOSE 9006
+ADD /target/AWS.jar AWS.jar
 
-CMD [ "java","-jar","aws_d_j.jar" ]
+ENTRYPOINT [ "java","-jar","/AWS.jar" ]
