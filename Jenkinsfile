@@ -50,7 +50,7 @@ stage('Login') {
 
 steps {
 
-sh 'echo pranit262 | docker login -u Pr@nit1905 --password-stdin'
+sh 'echo Pr@nit1905 | docker login -u pranit262 --password-stdin'
 
 }
 
